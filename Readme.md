@@ -41,3 +41,14 @@
 <summary>День №4: Cardio</summary>
 Решение задач по методам массивов: .filter(); .map(); .sort(); .reduce();  .findIndex(); .some(); .every(); .find(). Данные задачи расчитаны на два дня.
 </details>
+
+
+<details>
+<summary>День №5: Flex Panels Image Galery</summary>
+
+-
+-
+-
+
+</details>
+
