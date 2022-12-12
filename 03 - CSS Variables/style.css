@@ -1,3 +1,23 @@
+/* Псевдокласс :root используется в CSS для выбора родительского элемента самого высокого 
+уровня внутри заданной спецификации. */
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  /* CSS свойство filter позволяет вам применять к элементу такие графические эффекты, как 
+  размытие и смещение цвета */
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
 body {
   text-align: center;
   background: #193549;
