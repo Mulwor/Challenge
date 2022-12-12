@@ -39,7 +39,11 @@
 
 <details>
 <summary>День №4: Cardio</summary>
-Решение задач по методам массивов: .filter(); .map(); .sort(); .reduce();  .findIndex(); .some(); .every(); .find(). Данные задачи расчитаны на два дня.
+
+- Решение задач по методам массивов: .filter(); .map(); .sort(); .reduce();  .findIndex(); .some(); .every(); .find(). Данные задачи расчитаны на два дня.
+
+- Работа с консолью, узнать пару интересных фитчей: .log(), .warn(), .error(), .table(), .info(), .dir(), .clear(), count()
+
 </details>
 
 
