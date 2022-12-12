@@ -14,3 +14,8 @@
 - В Js прописать логику движение часов по часовой стрелке. 
 
 <img src='./assets/02.PNG'>
+
+День №3: Playing with CSS Variables and JS
+
+- 
+-
