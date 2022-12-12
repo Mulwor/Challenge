@@ -18,85 +18,91 @@ const inventors = [
   { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 },
 ];
 
-const people = [
-  'Bernhard, Sandra',
-  'Bethea, Erin',
-  'Becker, Carl',
-  'Bentsen, Lloyd',
-  'Beckett, Samuel',
-  'Blake, William',
-  'Berger, Ric',
-  'Beddoes, Mick',
-  'Beethoven, Ludwig',
-  'Belloc, Hilaire',
-  'Begin, Menachem',
-  'Bellow, Saul',
-  'Benchley, Robert',
-  'Blair, Robert',
-  'Benenson, Peter',
-  'Benjamin, Walter',
-  'Berlin, Irving',
-  'Benn, Tony',
-  'Benson, Leana',
-  'Bent, Silas',
-  'Berle, Milton',
-  'Berry, Halle',
-  'Biko, Steve',
-  'Beck, Glenn',
-  'Bergman, Ingmar',
-  'Black, Elk',
-  'Berio, Luciano',
-  'Berne, Eric',
-  'Berra, Yogi',
-  'Berry, Wendell',
-  'Bevan, Aneurin',
-  'Ben-Gurion, David',
-  'Bevel, Ken',
-  'Biden, Joseph',
-  'Bennington, Chester',
-  'Bierce, Ambrose',
-  'Billings, Josh',
-  'Birrell, Augustine',
-  'Blair, Tony',
-  'Beecher, Henry',
-  'Biondo, Frank',
-];
-
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
+const filterArray = inventors.filter(function (inventors) {
+  const firstValue = inventors.year >= 1500 
+  const secondValue = inventors.year < 1500 
+
+  if (firstValue && secondValue) return true
+})
+const filterAnotherArray = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600)
+
+
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+const mapArray = inventors.map(function (inventor){
+  `${inventor.first}` `${inventor.last}`
+})
+
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+const sortArray =  inventors.sort((a, b) => (a.year > b.year) ? 1 : 0)
+
+
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const reduceArray = inventors.reduce((total, inventor) => {
+  let total = 0
+  return total + (inventor.passed - inventor.year)
+})
+
+
 
 // 5. Sort the inventors by years lived
+const sortArrayToo =  inventors.sort(function(a, b) {
+  const lastGuy = a.passed - a.year;
+  const nextGuy = b.passed - b.year
+  return lastGuy > nextGuy ? -1 : 1
+})
+
+
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const category = document.querySelector('.mw-category')
+const links = Array.from(category.querySelectorAll('a'));
+const de = links.map (link => link.textContent)
+                .filter(streetName => streetName.includes('de'))
+
+
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+const people = [
+  'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Biondo, Frank',
+  'Beckett, Samuel', 'Blake, William', 'Berger, Ric', 'Beddoes, Mick', 'Beethoven, Ludwig', 
+  'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert',
+  'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving', 'Benn, Tony', 'Benson, Leana', 
+  'Bent, Silas', 'Berle, Milton', 'Berry, Halle', 'Biko, Steve', 'Beck, Glenn', 'Bergman, Ingmar', 
+  'Black, Elk', 'Berio, Luciano', 'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin',
+  'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose', 
+  'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 
+];
+
+const sortArrayName = people.sort((firstName, lastName) => {
+  const [firstnaming, lastnaming] = firstName.split(', ')
+  const [firstnamingAnother, lastnamingAnother] = lastName.split(', ')
+  return firstnaming > firstnamingAnother ? 1 : -1
+})
+
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = [
-  'car',
-  'car',
-  'truck',
-  'truck',
-  'bike',
-  'walk',
-  'car',
-  'van',
-  'bike',
-  'walk',
-  'car',
-  'van',
-  'car',
-  'truck',
+  'car', 'car', 'truck', 'truck', 'truck',
+  'bike', 'walk', 'car', 'van', 'bike',
+  'walk', 'car', 'van', 'car',
 ];
+
+const transportation = data.reduce(function (object, item) {
+  if (!object[item]) {
+    obj[item] = 0
+  }
+  obj[item]++
+  return obj;
+}, {})
