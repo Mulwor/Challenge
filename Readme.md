@@ -1,6 +1,6 @@
 Задания по нативному JS. Суть курса состоит в том, что каждый день на протяжение 30 дней будут давать таски, объясняя в чем состоит задача, а потом их реализация. Моя цель - все это изучить за 13-15 дней. 
 
-<template> 
+<details> 
 
 <summary>День №1: Drum Kit</summary>
 
@@ -10,10 +10,10 @@
 
 <img src='./assets/01.PNG'>
 
-</template>
+</details>
 
 
-<template>
+<details>
 
 <summary> День №2: JS and CSS clock </summary>
 
@@ -22,11 +22,11 @@
 
 <img src='./assets/02.PNG'>
 
-</template>
+</details>
 
 
 
-<template>
+<details>
 <summary>День №3: Playing with CSS Variables and JS</summary>
 
 - Научиться пользоваться переменными в CSS, и понять как они работают
@@ -34,9 +34,10 @@
 
 <img src='./assets/03.PNG'>
 
-</template>
+</details>
 
 
 
 День №4: Cardio, вспомнить основы Array Cardio Day #1: .filter(); .map(); .sort(); .reduce()
+
 День №5: Cardio, вспомнить основы Array Cardio Day #2: .findIndex(); .some(); .every(); .find()
