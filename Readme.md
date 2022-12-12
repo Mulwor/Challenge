@@ -37,7 +37,7 @@
 </details>
 
 
-
-День №4: Cardio, вспомнить основы Array Cardio Day #1: .filter(); .map(); .sort(); .reduce()
-
-День №5: Cardio, вспомнить основы Array Cardio Day #2: .findIndex(); .some(); .every(); .find()
+<details>
+<summary>День №4: Cardio</summary>
+Решение задач по методам массивов: .filter(); .map(); .sort(); .reduce();  .findIndex(); .some(); .every(); .find(). Данные задачи расчитаны на два дня.
+</details>
