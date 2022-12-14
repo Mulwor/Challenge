@@ -50,9 +50,22 @@
 <details>
 <summary>День №5: Flex Panels Image Galery</summary>
 
--
--
--
+- Необходимо научится (вспомнить) взаимодействовать с флексбоксом
+- Изучить псевдоклассы .first-child, а также .last-child
+- Необходимо написать логику в JS - для анимации открытие одной (и всех) из картинок
+
+<img src='./assets/04.PNG'>
+
+</details>
+
+<details>
+<summary>День №6: Type ahead</summary>
+
+- Запросы на сервер через fetch ... then
+- Реализация новых методов: .push(), .match(), replace(), toString(), join(). 
+- new RegExp, innerHTML
+
+<img src='./assets/05.PNG'>
 
 </details>
 
