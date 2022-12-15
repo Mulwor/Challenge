@@ -62,8 +62,9 @@
 <summary>День №6: Type ahead</summary>
 
 - Запросы на сервер через fetch ... then
-- Реализация новых методов: .push(), .match(), replace(), toString(), join(). 
-- new RegExp, innerHTML
+- Реализация новых методов: .push(), .match(), replace(), toString(), join(), new RegExp
+- Необходимо реализовать логику по совпадению слов, чтобы не было повтора
+- Необходимо поработать с инпутом в js, чтобы при поиски он добавлял старые стили по поиску
 
 <img src='./assets/05.PNG'>
 

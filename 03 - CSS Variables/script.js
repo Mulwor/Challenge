@@ -5,6 +5,7 @@ function handlerUpdate() {
   const app = this.dataset.sizing || '';
   console.log(this);
 
+  
   // ссылается на DOM-объект для тега <html>, style.setProperty() где устанавливает новое
   // значение свойства в объекте объявления стиля CSS.
   document.documentElement.style.setProperty(`--${this.name}`, this.value + app);
